@@ -1,0 +1,7 @@
+# Node modules
+node_modules/
+
+# Environment configuration files
+services/authService.env
+database/dbConnectionData.env
+loaders/configData.env

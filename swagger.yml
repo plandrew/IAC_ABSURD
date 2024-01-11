@@ -1,0 +1,277 @@
+openapi: 3.0.0
+info:
+  title: IAC ABSURD
+  version: 1.0.0
+  description: Information and Communication Aviation Based System for Unprecedented Recording and Documentation
+
+servers:
+  - url: http://localhost:3000
+    description: Base server
+
+tags:
+  - name: Authentication
+    description: Operations related to user authentication
+  - name: User Operations
+    description: Operations related to user data management
+
+security:
+  - OAuth2: [user]
+
+paths:
+  /auth:
+    post:
+      tags:
+        - Authentication
+      summary: Log-in to the app with GitHub
+      description: Log-in to the app with GitHub
+      responses:
+        '200':
+          description: User logged in successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                  message:
+                    type: string
+  /flights:
+    get:
+      tags:
+        - Flights Operations
+      summary: Get user records
+      description: Get user records
+      responses:
+        '200':
+          description: User details retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '401':
+          description: No token provided
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                  message:
+                    type: string
+        '403':
+          description: Invalid or expired token
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                  message:
+                    type: string
+        '404':
+          description: No flights found for given user
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                  message:
+                    type: string
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                  message:
+                    type: string
+    post:
+      tags:
+        - Flights Operations
+      summary: Create user's flight
+      description: Create user's record
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Flight'
+      responses:
+        '201':
+          description: Flight created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  departure_airport:
+                    type: string
+                  transit_airports:
+                    type: string
+                  arrival_airport:
+                    type: string
+                  startup_time:
+                    type: string
+                    format: date-time
+                  takeoff_time:
+                    type: string
+                    format: date-time
+                  landing_time:
+                    type: string
+                    format: date-time
+                  shutdown_time:
+                    type: string
+                    format: date-time
+                  aircraft_type:
+                    type: string
+                  aircraft_model:
+                    type: string
+                  aircraft_registration:
+                    type: string
+                  formation_name:
+                    type: string
+                  crew_function:
+                    type: string
+                  pic_name:
+                    type: string
+                  landings_day:
+                    type: integer
+                  landings_night:
+                    type: integer
+                  night_time:
+                    type: string
+                  instrument_time:
+                    type: string
+                  nvg_time:
+                    type: string
+                  visual_approaches:
+                    type: integer
+                  nonprecision_approaches:
+                    type: integer
+                  lpv_approaches:
+                    type: integer
+                  precision_approaches:
+                    type: integer
+                  remarks:
+                    type: string
+        '401':
+          description: No token provided
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                  message:
+                    type: string
+        '403':
+          description: Invalid or expired token
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                  message:
+                    type: string
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: integer
+                  message:
+                    type: string
+
+components:
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://github.com/login/oauth/authorize
+          tokenUrl: https://github.com/login/oauth/access_token
+          scopes:
+            user: Grants access to user profile
+
+  schemas:
+    User:
+      type: object
+      properties:
+        departure_airport:
+          type: string
+    Flight:
+      type: object
+      properties:
+        departure_airport:
+          type: string
+        transit_airports:
+          type: string
+        arrival_airport:
+          type: string
+        startup_time:
+          type: string
+          format: date-time
+        takeoff_time:
+          type: string
+          format: date-time
+        landing_time:
+          type: string
+          format: date-time
+        shutdown_time:
+          type: string
+          format: date-time
+        aircraft_type:
+          type: string
+        aircraft_model:
+          type: string
+        aircraft_registration:
+          type: string
+        formation_name:
+          type: string
+        crew_function:
+          type: string
+        pic_name:
+          type: string
+        landings_day:
+          type: integer
+        landings_night:
+          type: integer
+        night_time:
+          type: string
+        instrument_time:
+          type: string
+        nvg_time:
+          type: string
+        visual_approaches:
+          type: integer
+        nonprecision_approaches:
+          type: integer
+        lpv_approaches:
+          type: integer
+        precision_approaches:
+          type: integer
+        remarks:
+          type: string

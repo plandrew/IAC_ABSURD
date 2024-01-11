@@ -1,0 +1,1 @@
+/Applications/Postgres.app/Contents/Versions/16/bin/postgres "-D" "/Users/andrew/GitHub/BackEnd/IAC_ABSURD/IAC_ABSURD/DB" "-p" "5432"

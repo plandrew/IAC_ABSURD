@@ -1,0 +1,622 @@
+2024-01-04 13:52:44.094 CET [27842] LOG:  starting PostgreSQL 16.1 on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2024-01-04 13:52:44.096 CET [27842] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-04 13:52:44.096 CET [27842] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-04 13:52:44.096 CET [27842] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-01-04 13:52:44.097 CET [27845] LOG:  database system was shut down at 2024-01-04 13:52:44 CET
+2024-01-04 13:52:44.099 CET [27842] LOG:  database system is ready to accept connections
+2024-01-04 13:53:20.092 CET [27842] LOG:  received fast shutdown request
+2024-01-04 13:53:20.093 CET [27842] LOG:  aborting any active transactions
+2024-01-04 13:53:20.094 CET [27842] LOG:  background worker "logical replication launcher" (PID 27848) exited with exit code 1
+2024-01-04 13:53:20.094 CET [27843] LOG:  shutting down
+2024-01-04 13:53:20.095 CET [27843] LOG:  checkpoint starting: shutdown immediate
+2024-01-04 13:53:20.155 CET [27843] LOG:  checkpoint complete: wrote 941 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.047 s, sync=0.012 s, total=0.061 s; sync files=308, longest=0.002 s, average=0.001 s; distance=4317 kB, estimate=4317 kB; lsn=0/1B80FD8, redo lsn=0/1B80FD8
+2024-01-04 13:53:20.157 CET [27842] LOG:  database system is shut down
+2024-01-04 13:53:37.819 CET [27871] LOG:  starting PostgreSQL 16.1 on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2024-01-04 13:53:37.821 CET [27871] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-04 13:53:37.821 CET [27871] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-04 13:53:37.822 CET [27871] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-01-04 13:53:37.826 CET [27874] LOG:  database system was shut down at 2024-01-04 13:53:31 CET
+2024-01-04 13:53:37.829 CET [27871] LOG:  database system is ready to accept connections
+2024-01-04 13:57:04.325 CET [27871] LOG:  received fast shutdown request
+2024-01-04 13:57:04.325 CET [27871] LOG:  aborting any active transactions
+2024-01-04 13:57:04.325 CET [27881] FATAL:  terminating connection due to administrator command
+2024-01-04 13:57:04.325 CET [27895] FATAL:  terminating connection due to administrator command
+2024-01-04 13:57:04.326 CET [27871] LOG:  background worker "logical replication launcher" (PID 27877) exited with exit code 1
+2024-01-04 13:57:04.327 CET [27872] LOG:  shutting down
+2024-01-04 13:57:04.327 CET [27872] LOG:  checkpoint starting: shutdown immediate
+2024-01-04 13:57:04.391 CET [27872] LOG:  checkpoint complete: wrote 987 buffers (6.0%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.056 s, sync=0.009 s, total=0.065 s; sync files=314, longest=0.001 s, average=0.001 s; distance=4681 kB, estimate=4681 kB; lsn=0/2015430, redo lsn=0/2015430
+2024-01-04 13:57:04.394 CET [27871] LOG:  database system is shut down
+2024-01-04 13:57:20.041 CET [27940] LOG:  starting PostgreSQL 16.1 on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2024-01-04 13:57:20.043 CET [27940] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-04 13:57:20.043 CET [27940] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-04 13:57:20.044 CET [27940] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-01-04 13:57:20.048 CET [27943] LOG:  database system was shut down at 2024-01-04 13:57:17 CET
+2024-01-04 13:57:20.051 CET [27940] LOG:  database system is ready to accept connections
+2024-01-04 13:59:09.468 CET [27955] ERROR:  relation "users" does not exist
+2024-01-04 13:59:09.468 CET [27955] STATEMENT:  CREATE TABLE IF NOT EXISTS user_flights (
+	      user_id INT,
+	      flight_id INT,
+	      PRIMARY KEY (user_id, flight_id),
+	      FOREIGN KEY (user_id) REFERENCES users(id),
+	      FOREIGN KEY (flight_id) REFERENCES flights(flightId)
+	    );
+2024-01-04 14:01:03.780 CET [27940] LOG:  received fast shutdown request
+2024-01-04 14:01:03.781 CET [27940] LOG:  aborting any active transactions
+2024-01-04 14:01:03.782 CET [27940] LOG:  background worker "logical replication launcher" (PID 27946) exited with exit code 1
+2024-01-04 14:01:03.782 CET [27941] LOG:  shutting down
+2024-01-04 14:01:03.782 CET [27941] LOG:  checkpoint starting: shutdown immediate
+2024-01-04 14:01:03.790 CET [27941] LOG:  checkpoint complete: wrote 64 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.001 s, total=0.009 s; sync files=49, longest=0.001 s, average=0.001 s; distance=291 kB, estimate=291 kB; lsn=0/2060790, redo lsn=0/2060790
+2024-01-04 14:01:03.792 CET [27940] LOG:  database system is shut down
+2024-01-04 14:02:48.750 CET [28019] LOG:  starting PostgreSQL 16.1 on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2024-01-04 14:02:48.752 CET [28019] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-04 14:02:48.752 CET [28019] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-04 14:02:48.753 CET [28019] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-01-04 14:02:48.757 CET [28022] LOG:  database system was shut down at 2024-01-04 14:02:46 CET
+2024-01-04 14:02:48.760 CET [28019] LOG:  database system is ready to accept connections
+2024-01-04 14:04:30.869 CET [28019] LOG:  received fast shutdown request
+2024-01-04 14:04:30.870 CET [28019] LOG:  aborting any active transactions
+2024-01-04 14:04:30.872 CET [28019] LOG:  background worker "logical replication launcher" (PID 28025) exited with exit code 1
+2024-01-04 14:04:30.872 CET [28020] LOG:  shutting down
+2024-01-04 14:04:30.872 CET [28020] LOG:  checkpoint starting: shutdown immediate
+2024-01-04 14:04:30.876 CET [28020] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.004 s; sync files=3, longest=0.001 s, average=0.001 s; distance=8 kB, estimate=8 kB; lsn=0/20629D8, redo lsn=0/20629D8
+2024-01-04 14:04:30.879 CET [28019] LOG:  database system is shut down
+2024-01-04 14:04:31.627 CET [28073] LOG:  starting PostgreSQL 16.1 on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2024-01-04 14:04:31.631 CET [28073] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-04 14:04:31.631 CET [28073] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-04 14:04:31.631 CET [28073] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-01-04 14:04:31.635 CET [28076] LOG:  database system was shut down at 2024-01-04 14:04:30 CET
+2024-01-04 14:04:31.639 CET [28073] LOG:  database system is ready to accept connections
+2024-01-04 14:06:37.051 CET [28073] LOG:  received fast shutdown request
+2024-01-04 14:06:37.052 CET [28073] LOG:  aborting any active transactions
+2024-01-04 14:06:37.055 CET [28073] LOG:  background worker "logical replication launcher" (PID 28079) exited with exit code 1
+2024-01-04 14:06:37.055 CET [28074] LOG:  shutting down
+2024-01-04 14:06:37.056 CET [28074] LOG:  checkpoint starting: shutdown immediate
+2024-01-04 14:06:37.060 CET [28074] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.005 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/2062A88, redo lsn=0/2062A88
+2024-01-04 14:06:37.064 CET [28073] LOG:  database system is shut down
+2024-01-04 14:07:01.097 CET [28140] LOG:  starting PostgreSQL 16.1 on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2024-01-04 14:07:01.100 CET [28140] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-04 14:07:01.100 CET [28140] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-04 14:07:01.100 CET [28140] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-01-04 14:07:01.104 CET [28143] LOG:  database system was shut down at 2024-01-04 14:06:59 CET
+2024-01-04 14:07:01.106 CET [28140] LOG:  database system is ready to accept connections
+2024-01-04 14:08:43.786 CET [28140] LOG:  received fast shutdown request
+2024-01-04 14:08:43.787 CET [28140] LOG:  aborting any active transactions
+2024-01-04 14:08:43.788 CET [28140] LOG:  background worker "logical replication launcher" (PID 28146) exited with exit code 1
+2024-01-04 14:08:43.789 CET [28141] LOG:  shutting down
+2024-01-04 14:08:43.789 CET [28141] LOG:  checkpoint starting: shutdown immediate
+2024-01-04 14:08:43.792 CET [28141] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.004 s; sync files=3, longest=0.001 s, average=0.001 s; distance=3 kB, estimate=3 kB; lsn=0/20662A8, redo lsn=0/20662A8
+2024-01-04 14:08:43.795 CET [28140] LOG:  database system is shut down
+2024-01-04 14:08:45.104 CET [28175] LOG:  starting PostgreSQL 16.1 on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2024-01-04 14:08:45.106 CET [28175] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-04 14:08:45.106 CET [28175] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-04 14:08:45.107 CET [28175] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-01-04 14:08:45.111 CET [28178] LOG:  database system was shut down at 2024-01-04 14:08:43 CET
+2024-01-04 14:08:45.115 CET [28175] LOG:  database system is ready to accept connections
+2024-01-04 14:09:05.641 CET [28191] ERROR:  syntax error at or near "users" at character 6
+2024-01-04 14:09:05.641 CET [28191] STATEMENT:  drop users;
+2024-01-04 14:09:18.719 CET [28195] ERROR:  relation "public.users" does not exist at character 611
+2024-01-04 14:09:18.719 CET [28195] STATEMENT:  ---------------------------------------------------------------------------------
+	-- Fetch OID, Comment, Tablespace, and View Definition (if applicable) ----------
+	---------------------------------------------------------------------------------
+	SELECT
+		pg_class.oid,
+		obj_description(pg_class.oid, 'pg_class') AS comment,
+		COALESCE(spcname, (select spcname from pg_tablespace, pg_database where pg_tablespace.oid=dattablespace and datname='IAC_ABSURD')) as tablespace,
+		pg_get_viewdef(pg_class.oid,true) AS viewdef
+	FROM pg_class
+	LEFT JOIN pg_tablespace ON pg_tablespace.oid=reltablespace
+	WHERE pg_class.oid = '"public"."users"'::regclass::oid AND relkind='r';
+	
+	---------------------------------------------------------------------------------
+	-- Fetch Column Information -----------------------------------------------------
+	---------------------------------------------------------------------------------
+	SELECT 
+		attnum,
+		attname,
+		atttypid,
+		attnotnull,
+		format_type(atttypid,atttypmod),
+		pg_get_expr(adbin, attrelid, true) AS adsrc,
+		col_description(attrelid, attnum),
+		typcategory,
+		has_column_privilege(attrelid,attnum,'SELECT'),
+		attgenerated,
+		attidentity,
+		(
+		SELECT row_to_json(s) FROM pg_sequence s
+		JOIN pg_depend d ON (d.classid='pg_class'::regclass AND s.seqrelid=d.objid)
+		WHERE d.refclassid='pg_class'::regclass AND d.refobjid=attrelid AND d.refobjsubid=attnum
+		LIMIT 1
+	)  AS sequence_options
+	
+	FROM pg_attribute
+	LEFT JOIN pg_type ON atttypid=pg_type.oid
+	LEFT JOIN pg_attrdef ON adrelid=attrelid AND adnum=attnum
+	WHERE attrelid = '"public"."users"'::regclass
+	  AND NOT attisdropped
+	
+	ORDER BY attnum;
+	
+	---------------------------------------------------------------------------------
+	-- Fetch Indexes ----------------------------------------------------------------
+	---------------------------------------------------------------------------------
+	SELECT
+		pg_class.oid,
+		pg_class.relname,
+		indisunique,
+		indisprimary,
+		indisexclusion,
+		indkey,
+		pg_get_indexdef(indexrelid, 0, true) AS definition,
+		ARRAY(select pg_get_indexdef(indexrelid, attnum, true) FROM pg_attribute WHERE attrelid = indexrelid ORDER BY attnum) AS expressions,
+		obj_description(pg_class.oid, 'pg_class') AS comment,
+		indoption,
+		ARRAY(SELECT pg_collation.collname FROM unnest(indcollation) AS t(colid) LEFT JOIN pg_collation ON pg_collation.oid = colid) AS collations,
+		ARRAY(SELECT pg_opclass.opcname FROM generate_series(0, indnatts-1) AS t(i) LEFT JOIN pg_opclass ON pg_opclass.oid = indclass[i]) AS opclasses, -- we need to use generate_series because unnest is not available on 8.0 / Redshift
+		pg_get_expr(indpred,indrelid, true),
+		amname
+	FROM pg_index
+	LEFT JOIN pg_class ON pg_class.oid = indexrelid
+	LEFT JOIN pg_am ON pg_class.relam = pg_am.oid
+	WHERE indrelid = '"public"."users"'::regclass
+	ORDER BY pg_class.oid;
+	
+	---------------------------------------------------------------------------------
+	-- Fetch Constraints ------------------------------------------------------------
+	---------------------------------------------------------------------------------
+	SELECT
+		pg_constraint.oid,
+		conname,
+		contype,
+		conkey,
+		nspname AS fschema,
+		relname AS ftable,
+		confkey AS fkeys,
+		pg_get_expr(conbin, conrelid, true),
+		pg_get_constraintdef(pg_constraint.oid, true),
+		confupdtype,
+		confdeltype,
+		obj_description(pg_constraint.oid, 'pg_constraint'),
+		condeferrable,
+		condeferred,
+		connoinherit,
+		pg_extension.extname
+	FROM pg_constraint
+	LEFT JOIN pg_class ON pg_class.oid = confrelid
+	LEFT JOIN pg_namespace ON pg_namespace.oid = pg_class.relnamespace
+		LEFT JOIN pg_depend ON pg_depend.refclassid = 'pg_catalog.pg_extension'::regclass
+		AND pg_depend.classid = 'pg_catalog.pg_class'::regclass
+		AND pg_depend.objid = pg_class.oid
+		LEFT JOIN pg_extension ON pg_depend.refobjid = pg_extension.oid
+	WHERE conrelid = '"public"."users"'::regclass;
+	
+	---------------------------------------------------------------------------------
+	-- Fetch Values for ENUM types in the table  ------------------------------------
+	---------------------------------------------------------------------------------
+	SELECT
+		pg_type.oid,
+		ARRAY(
+			SELECT enumlabel
+			FROM pg_enum
+			WHERE enumtypid=pg_type.oid
+			ORDER BY enumsortorder
+		)
+	FROM pg_type
+	WHERE pg_type.oid IN (SELECT atttypid FROM pg_attribute WHERE attrelid = '"public"."users"'::regclass)
+	  AND typtype='e';
+2024-01-04 14:09:51.318 CET [28190] FATAL:  canceling authentication due to timeout
+2024-01-04 14:13:45.110 CET [28176] LOG:  checkpoint starting: time
+2024-01-04 14:13:46.339 CET [28176] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.223 s, sync=0.001 s, total=1.230 s; sync files=10, longest=0.001 s, average=0.001 s; distance=64 kB, estimate=64 kB; lsn=0/20762F8, redo lsn=0/20762C0
+2024-01-04 14:23:45.337 CET [28176] LOG:  checkpoint starting: time
+2024-01-04 14:23:46.465 CET [28176] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.121 s, sync=0.002 s, total=1.129 s; sync files=9, longest=0.001 s, average=0.001 s; distance=49 kB, estimate=62 kB; lsn=0/20827A0, redo lsn=0/2082768
+2024-01-04 14:27:03.945 CET [28367] FATAL:  canceling authentication due to timeout
+2024-01-04 14:30:06.379 CET [28455] FATAL:  canceling authentication due to timeout
+2024-01-04 14:31:58.412 CET [28544] ERROR:  relation "users" does not exist
+2024-01-04 14:31:58.412 CET [28544] STATEMENT:  
+	    CREATE TABLE IF NOT EXISTS user_flights (
+	      user_id INT,
+	      flight_id INT,
+	      PRIMARY KEY (user_id, flight_id),
+	      FOREIGN KEY (user_id) REFERENCES users(id),
+	      FOREIGN KEY (flight_id) REFERENCES flights(flightId)
+	    );
+	  
+2024-01-04 14:32:49.027 CET [28587] ERROR:  relation "users" does not exist
+2024-01-04 14:32:49.027 CET [28587] STATEMENT:  
+	  CREATE TABLE IF NOT EXISTS user_flights (
+	    user_id INT,
+	    flight_id INT,
+	    PRIMARY KEY (user_id, flight_id),
+	    FOREIGN KEY (user_id) REFERENCES users(id),
+	    FOREIGN KEY (flight_id) REFERENCES flights(flightId)
+	  );
+	
+2024-01-04 14:33:45.418 CET [28176] LOG:  checkpoint starting: time
+2024-01-04 14:33:50.410 CET [28176] LOG:  checkpoint complete: wrote 50 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.982 s, sync=0.005 s, total=4.993 s; sync files=48, longest=0.001 s, average=0.001 s; distance=248 kB, estimate=248 kB; lsn=0/20C09E0, redo lsn=0/20C09A8
+2024-01-04 14:34:28.166 CET [28647] ERROR:  relation "users" does not exist
+2024-01-04 14:34:28.166 CET [28647] STATEMENT:  
+	  CREATE TABLE IF NOT EXISTS user_flights (
+	    user_id INT,
+	    flight_id INT,
+	    PRIMARY KEY (user_id, flight_id),
+	    FOREIGN KEY (user_id) REFERENCES users(id),
+	    FOREIGN KEY (flight_id) REFERENCES flights(flightId)
+	  );
+	
+2024-01-04 14:35:06.136 CET [28686] ERROR:  relation "users" does not exist
+2024-01-04 14:35:06.136 CET [28686] STATEMENT:  
+	  CREATE TABLE IF NOT EXISTS user_flights (
+	    user_id INT,
+	    flight_id INT,
+	    PRIMARY KEY (user_id, flight_id),
+	    FOREIGN KEY (user_id) REFERENCES users(id),
+	    FOREIGN KEY (flight_id) REFERENCES flights(id)
+	  );
+	
+2024-01-04 14:38:45.407 CET [28176] LOG:  checkpoint starting: time
+2024-01-04 14:38:51.731 CET [28176] LOG:  checkpoint complete: wrote 63 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.314 s, sync=0.004 s, total=6.325 s; sync files=53, longest=0.001 s, average=0.001 s; distance=348 kB, estimate=348 kB; lsn=0/2117B48, redo lsn=0/2117B10
+2024-01-04 14:39:03.929 CET [28751] ERROR:  relation "users" does not exist
+2024-01-04 14:39:03.929 CET [28751] STATEMENT:  
+	  CREATE TABLE IF NOT EXISTS user_flights (
+	    user_id INT,
+	    flight_id INT,
+	    PRIMARY KEY (user_id, flight_id),
+	    FOREIGN KEY (user_id) REFERENCES users(id),
+	    FOREIGN KEY (flight_id) REFERENCES flights(id)
+	  );
+	
+2024-01-04 14:40:11.971 CET [28782] ERROR:  relation "users" does not exist
+2024-01-04 14:40:11.971 CET [28782] STATEMENT:  
+	  CREATE TABLE IF NOT EXISTS user_flights (
+	    user_id INT,
+	    flight_id INT,
+	    PRIMARY KEY (user_id, flight_id),
+	    FOREIGN KEY (user_id) REFERENCES users(id),
+	    FOREIGN KEY (flight_id) REFERENCES flights(id)
+	  );
+	
+2024-01-04 14:42:28.807 CET [28821] ERROR:  cannot drop the currently open database
+2024-01-04 14:42:28.807 CET [28821] STATEMENT:  DROP DATABASE "IAC_ABSURD"
+2024-01-04 14:42:52.982 CET [28176] LOG:  checkpoint starting: immediate force wait
+2024-01-04 14:42:52.987 CET [28176] LOG:  checkpoint complete: wrote 23 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.006 s; sync files=15, longest=0.001 s, average=0.001 s; distance=1002 kB, estimate=1002 kB; lsn=0/22124C0, redo lsn=0/2212488
+2024-01-04 14:43:14.903 CET [28866] ERROR:  relation "users" does not exist
+2024-01-04 14:43:14.903 CET [28866] STATEMENT:  
+	  CREATE TABLE IF NOT EXISTS user_flights (
+	    user_id INT,
+	    flight_id INT,
+	    PRIMARY KEY (user_id, flight_id),
+	    FOREIGN KEY (user_id) REFERENCES users(id),
+	    FOREIGN KEY (flight_id) REFERENCES flights(id)
+	  );
+	
+2024-01-04 14:47:53.049 CET [28176] LOG:  checkpoint starting: time
+2024-01-04 14:49:30.285 CET [28176] LOG:  checkpoint complete: wrote 958 buffers (5.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=97.224 s, sync=0.007 s, total=97.237 s; sync files=323, longest=0.001 s, average=0.001 s; distance=4437 kB, estimate=4437 kB; lsn=0/2667A58, redo lsn=0/2667A20
+2024-01-04 17:12:34.066 CET [30803] FATAL:  canceling authentication due to timeout
+2024-01-04 17:16:03.776 CET [31001] FATAL:  canceling authentication due to timeout
+2024-01-04 17:16:59.761 CET [28175] LOG:  received fast shutdown request
+2024-01-04 17:16:59.763 CET [28175] LOG:  aborting any active transactions
+2024-01-04 17:16:59.763 CET [31107] FATAL:  canceling authentication due to timeout
+2024-01-04 17:16:59.770 CET [28175] LOG:  background worker "logical replication launcher" (PID 28181) exited with exit code 1
+2024-01-04 17:16:59.770 CET [28176] LOG:  shutting down
+2024-01-04 17:16:59.771 CET [28176] LOG:  checkpoint starting: shutdown immediate
+2024-01-04 17:16:59.776 CET [28176] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.006 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=3993 kB; lsn=0/2667B08, redo lsn=0/2667B08
+2024-01-04 17:16:59.784 CET [28175] LOG:  database system is shut down
+2024-01-04 17:17:05.270 CET [31140] LOG:  starting PostgreSQL 16.1 on aarch64-apple-darwin21.6.0, compiled by Apple clang version 14.0.0 (clang-1400.0.29.102), 64-bit
+2024-01-04 17:17:05.272 CET [31140] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-04 17:17:05.272 CET [31140] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-04 17:17:05.272 CET [31140] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-01-04 17:17:05.274 CET [31143] LOG:  database system was shut down at 2024-01-04 17:16:59 CET
+2024-01-04 17:17:05.279 CET [31140] LOG:  database system is ready to accept connections
+2024-01-04 17:19:33.442 CET [31201] FATAL:  canceling authentication due to timeout
+2024-01-04 17:22:05.304 CET [31141] LOG:  checkpoint starting: time
+2024-01-04 17:22:06.830 CET [31141] LOG:  checkpoint complete: wrote 18 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.521 s, sync=0.002 s, total=1.526 s; sync files=12, longest=0.001 s, average=0.001 s; distance=82 kB, estimate=82 kB; lsn=0/267C498, redo lsn=0/267C460
+2024-01-04 17:25:32.250 CET [31474] FATAL:  canceling authentication due to timeout
+2024-01-04 17:27:05.831 CET [31141] LOG:  checkpoint starting: time
+2024-01-04 17:27:12.658 CET [31141] LOG:  checkpoint complete: wrote 68 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.817 s, sync=0.006 s, total=6.827 s; sync files=56, longest=0.001 s, average=0.001 s; distance=336 kB, estimate=336 kB; lsn=0/26D07A8, redo lsn=0/26D0770
+2024-01-04 17:27:45.139 CET [31545] FATAL:  canceling authentication due to timeout
+2024-01-04 17:29:28.882 CET [31622] FATAL:  canceling authentication due to timeout
+2024-01-04 17:46:01.207 CET [32180] FATAL:  canceling authentication due to timeout
+2024-01-04 17:59:00.989 CET [32739] FATAL:  password authentication failed for user "andrew"
+2024-01-04 17:59:00.989 CET [32739] DETAIL:  Connection matched file "/Users/andrew/GitHub/BackEnd/IAC_ABSURD/IAC_ABSURD/DB/pg_hba.conf" line 121: "host    all             all             ::1/128                 md5"
+2024-01-06 13:41:42.905 CET [31141] LOG:  checkpoint starting: time
+2024-01-06 13:41:43.727 CET [31141] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.815 s, sync=0.001 s, total=0.823 s; sync files=6, longest=0.001 s, average=0.001 s; distance=38 kB, estimate=306 kB; lsn=0/26DA248, redo lsn=0/26DA210
+2024-01-06 14:07:22.705 CET [38762] FATAL:  canceling authentication due to timeout
+2024-01-06 14:26:42.700 CET [31141] LOG:  checkpoint starting: time
+2024-01-06 14:26:43.324 CET [31141] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.615 s, sync=0.002 s, total=0.626 s; sync files=6, longest=0.001 s, average=0.001 s; distance=6 kB, estimate=276 kB; lsn=0/26DBBA0, redo lsn=0/26DBB68
+2024-01-06 14:31:42.320 CET [31141] LOG:  checkpoint starting: time
+2024-01-06 14:31:54.848 CET [31141] LOG:  checkpoint complete: wrote 124 buffers (0.8%); 0 WAL file(s) added, 0 removed, 0 recycled; write=12.514 s, sync=0.006 s, total=12.529 s; sync files=72, longest=0.001 s, average=0.001 s; distance=768 kB, estimate=768 kB; lsn=0/279BC48, redo lsn=0/279BC10
+2024-01-06 15:41:42.883 CET [31141] LOG:  checkpoint starting: time
+2024-01-06 15:41:42.995 CET [31141] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.103 s, sync=0.001 s, total=0.113 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=691 kB; lsn=0/279BF90, redo lsn=0/279BF58
+2024-01-06 15:46:43.006 CET [31141] LOG:  checkpoint starting: time
+2024-01-06 15:46:43.321 CET [31141] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.306 s, sync=0.001 s, total=0.315 s; sync files=4, longest=0.001 s, average=0.001 s; distance=2 kB, estimate=622 kB; lsn=0/279C7B0, redo lsn=0/279C778
+2024-01-06 15:51:43.321 CET [31141] LOG:  checkpoint starting: time
+2024-01-06 15:51:43.636 CET [31141] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.306 s, sync=0.001 s, total=0.316 s; sync files=4, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=560 kB; lsn=0/279CF80, redo lsn=0/279CF48
+2024-01-08 17:05:06.011 CET [51798] ERROR:  column "githubId" of relation "users" does not exist at character 21
+2024-01-08 17:05:06.011 CET [51798] STATEMENT:  INSERT INTO "users"("githubId","login","avatar_url","gravatar_id","email") VALUES(105716621,'plandrew','https://avatars.githubusercontent.com/u/105716621?v=4','','{"value":"andrew.pl@protonmail.com"}')RETURNING *
+2024-01-08 17:05:23.911 CET [51806] ERROR:  cannot drop table users because other objects depend on it
+2024-01-08 17:05:23.911 CET [51806] DETAIL:  constraint user_flights_user_id_fkey on table user_flights depends on table users
+2024-01-08 17:05:23.911 CET [51806] HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2024-01-08 17:05:23.911 CET [51806] STATEMENT:  DROP TABLE "public"."users";
+	
+2024-01-08 17:05:36.827 CET [51806] ERROR:  relation "public.flights" does not exist at character 611
+2024-01-08 17:05:36.827 CET [51806] STATEMENT:  ---------------------------------------------------------------------------------
+	-- Fetch OID, Comment, Tablespace, and View Definition (if applicable) ----------
+	---------------------------------------------------------------------------------
+	SELECT
+		pg_class.oid,
+		obj_description(pg_class.oid, 'pg_class') AS comment,
+		COALESCE(spcname, (select spcname from pg_tablespace, pg_database where pg_tablespace.oid=dattablespace and datname='IAC_ABSURD')) as tablespace,
+		pg_get_viewdef(pg_class.oid,true) AS viewdef
+	FROM pg_class
+	LEFT JOIN pg_tablespace ON pg_tablespace.oid=reltablespace
+	WHERE pg_class.oid = '"public"."flights"'::regclass::oid AND relkind='r';
+	
+	---------------------------------------------------------------------------------
+	-- Fetch Column Information -----------------------------------------------------
+	---------------------------------------------------------------------------------
+	SELECT 
+		attnum,
+		attname,
+		atttypid,
+		attnotnull,
+		format_type(atttypid,atttypmod),
+		pg_get_expr(adbin, attrelid, true) AS adsrc,
+		col_description(attrelid, attnum),
+		typcategory,
+		has_column_privilege(attrelid,attnum,'SELECT'),
+		attgenerated,
+		attidentity,
+		(
+		SELECT row_to_json(s) FROM pg_sequence s
+		JOIN pg_depend d ON (d.classid='pg_class'::regclass AND s.seqrelid=d.objid)
+		WHERE d.refclassid='pg_class'::regclass AND d.refobjid=attrelid AND d.refobjsubid=attnum
+		LIMIT 1
+	)  AS sequence_options
+	
+	FROM pg_attribute
+	LEFT JOIN pg_type ON atttypid=pg_type.oid
+	LEFT JOIN pg_attrdef ON adrelid=attrelid AND adnum=attnum
+	WHERE attrelid = '"public"."flights"'::regclass
+	  AND NOT attisdropped
+	
+	ORDER BY attnum;
+	
+	---------------------------------------------------------------------------------
+	-- Fetch Indexes ----------------------------------------------------------------
+	---------------------------------------------------------------------------------
+	SELECT
+		pg_class.oid,
+		pg_class.relname,
+		indisunique,
+		indisprimary,
+		indisexclusion,
+		indkey,
+		pg_get_indexdef(indexrelid, 0, true) AS definition,
+		ARRAY(select pg_get_indexdef(indexrelid, attnum, true) FROM pg_attribute WHERE attrelid = indexrelid ORDER BY attnum) AS expressions,
+		obj_description(pg_class.oid, 'pg_class') AS comment,
+		indoption,
+		ARRAY(SELECT pg_collation.collname FROM unnest(indcollation) AS t(colid) LEFT JOIN pg_collation ON pg_collation.oid = colid) AS collations,
+		ARRAY(SELECT pg_opclass.opcname FROM generate_series(0, indnatts-1) AS t(i) LEFT JOIN pg_opclass ON pg_opclass.oid = indclass[i]) AS opclasses, -- we need to use generate_series because unnest is not available on 8.0 / Redshift
+		pg_get_expr(indpred,indrelid, true),
+		amname
+	FROM pg_index
+	LEFT JOIN pg_class ON pg_class.oid = indexrelid
+	LEFT JOIN pg_am ON pg_class.relam = pg_am.oid
+	WHERE indrelid = '"public"."flights"'::regclass
+	ORDER BY pg_class.oid;
+	
+	---------------------------------------------------------------------------------
+	-- Fetch Constraints ------------------------------------------------------------
+	---------------------------------------------------------------------------------
+	SELECT
+		pg_constraint.oid,
+		conname,
+		contype,
+		conkey,
+		nspname AS fschema,
+		relname AS ftable,
+		confkey AS fkeys,
+		pg_get_expr(conbin, conrelid, true),
+		pg_get_constraintdef(pg_constraint.oid, true),
+		confupdtype,
+		confdeltype,
+		obj_description(pg_constraint.oid, 'pg_constraint'),
+		condeferrable,
+		condeferred,
+		connoinherit,
+		pg_extension.extname
+	FROM pg_constraint
+	LEFT JOIN pg_class ON pg_class.oid = confrelid
+	LEFT JOIN pg_namespace ON pg_namespace.oid = pg_class.relnamespace
+		LEFT JOIN pg_depend ON pg_depend.refclassid = 'pg_catalog.pg_extension'::regclass
+		AND pg_depend.classid = 'pg_catalog.pg_class'::regclass
+		AND pg_depend.objid = pg_class.oid
+		LEFT JOIN pg_extension ON pg_depend.refobjid = pg_extension.oid
+	WHERE conrelid = '"public"."flights"'::regclass;
+	
+	---------------------------------------------------------------------------------
+	-- Fetch Values for ENUM types in the table  ------------------------------------
+	---------------------------------------------------------------------------------
+	SELECT
+		pg_type.oid,
+		ARRAY(
+			SELECT enumlabel
+			FROM pg_enum
+			WHERE enumtypid=pg_type.oid
+			ORDER BY enumsortorder
+		)
+	FROM pg_type
+	WHERE pg_type.oid IN (SELECT atttypid FROM pg_attribute WHERE attrelid = '"public"."flights"'::regclass)
+	  AND typtype='e';
+2024-01-08 17:05:40.254 CET [51806] ERROR:  relation "public.users" does not exist at character 611
+2024-01-08 17:05:40.254 CET [51806] STATEMENT:  ---------------------------------------------------------------------------------
+	-- Fetch OID, Comment, Tablespace, and View Definition (if applicable) ----------
+	---------------------------------------------------------------------------------
+	SELECT
+		pg_class.oid,
+		obj_description(pg_class.oid, 'pg_class') AS comment,
+		COALESCE(spcname, (select spcname from pg_tablespace, pg_database where pg_tablespace.oid=dattablespace and datname='IAC_ABSURD')) as tablespace,
+		pg_get_viewdef(pg_class.oid,true) AS viewdef
+	FROM pg_class
+	LEFT JOIN pg_tablespace ON pg_tablespace.oid=reltablespace
+	WHERE pg_class.oid = '"public"."users"'::regclass::oid AND relkind='r';
+	
+	---------------------------------------------------------------------------------
+	-- Fetch Column Information -----------------------------------------------------
+	---------------------------------------------------------------------------------
+	SELECT 
+		attnum,
+		attname,
+		atttypid,
+		attnotnull,
+		format_type(atttypid,atttypmod),
+		pg_get_expr(adbin, attrelid, true) AS adsrc,
+		col_description(attrelid, attnum),
+		typcategory,
+		has_column_privilege(attrelid,attnum,'SELECT'),
+		attgenerated,
+		attidentity,
+		(
+		SELECT row_to_json(s) FROM pg_sequence s
+		JOIN pg_depend d ON (d.classid='pg_class'::regclass AND s.seqrelid=d.objid)
+		WHERE d.refclassid='pg_class'::regclass AND d.refobjid=attrelid AND d.refobjsubid=attnum
+		LIMIT 1
+	)  AS sequence_options
+	
+	FROM pg_attribute
+	LEFT JOIN pg_type ON atttypid=pg_type.oid
+	LEFT JOIN pg_attrdef ON adrelid=attrelid AND adnum=attnum
+	WHERE attrelid = '"public"."users"'::regclass
+	  AND NOT attisdropped
+	
+	ORDER BY attnum;
+	
+	---------------------------------------------------------------------------------
+	-- Fetch Indexes ----------------------------------------------------------------
+	---------------------------------------------------------------------------------
+	SELECT
+		pg_class.oid,
+		pg_class.relname,
+		indisunique,
+		indisprimary,
+		indisexclusion,
+		indkey,
+		pg_get_indexdef(indexrelid, 0, true) AS definition,
+		ARRAY(select pg_get_indexdef(indexrelid, attnum, true) FROM pg_attribute WHERE attrelid = indexrelid ORDER BY attnum) AS expressions,
+		obj_description(pg_class.oid, 'pg_class') AS comment,
+		indoption,
+		ARRAY(SELECT pg_collation.collname FROM unnest(indcollation) AS t(colid) LEFT JOIN pg_collation ON pg_collation.oid = colid) AS collations,
+		ARRAY(SELECT pg_opclass.opcname FROM generate_series(0, indnatts-1) AS t(i) LEFT JOIN pg_opclass ON pg_opclass.oid = indclass[i]) AS opclasses, -- we need to use generate_series because unnest is not available on 8.0 / Redshift
+		pg_get_expr(indpred,indrelid, true),
+		amname
+	FROM pg_index
+	LEFT JOIN pg_class ON pg_class.oid = indexrelid
+	LEFT JOIN pg_am ON pg_class.relam = pg_am.oid
+	WHERE indrelid = '"public"."users"'::regclass
+	ORDER BY pg_class.oid;
+	
+	---------------------------------------------------------------------------------
+	-- Fetch Constraints ------------------------------------------------------------
+	---------------------------------------------------------------------------------
+	SELECT
+		pg_constraint.oid,
+		conname,
+		contype,
+		conkey,
+		nspname AS fschema,
+		relname AS ftable,
+		confkey AS fkeys,
+		pg_get_expr(conbin, conrelid, true),
+		pg_get_constraintdef(pg_constraint.oid, true),
+		confupdtype,
+		confdeltype,
+		obj_description(pg_constraint.oid, 'pg_constraint'),
+		condeferrable,
+		condeferred,
+		connoinherit,
+		pg_extension.extname
+	FROM pg_constraint
+	LEFT JOIN pg_class ON pg_class.oid = confrelid
+	LEFT JOIN pg_namespace ON pg_namespace.oid = pg_class.relnamespace
+		LEFT JOIN pg_depend ON pg_depend.refclassid = 'pg_catalog.pg_extension'::regclass
+		AND pg_depend.classid = 'pg_catalog.pg_class'::regclass
+		AND pg_depend.objid = pg_class.oid
+		LEFT JOIN pg_extension ON pg_depend.refobjid = pg_extension.oid
+	WHERE conrelid = '"public"."users"'::regclass;
+	
+	---------------------------------------------------------------------------------
+	-- Fetch Values for ENUM types in the table  ------------------------------------
+	---------------------------------------------------------------------------------
+	SELECT
+		pg_type.oid,
+		ARRAY(
+			SELECT enumlabel
+			FROM pg_enum
+			WHERE enumtypid=pg_type.oid
+			ORDER BY enumsortorder
+		)
+	FROM pg_type
+	WHERE pg_type.oid IN (SELECT atttypid FROM pg_attribute WHERE attrelid = '"public"."users"'::regclass)
+	  AND typtype='e';
+2024-01-08 17:06:29.339 CET [51902] ERROR:  syntax error at or near "PRIMARY" at character 56
+2024-01-08 17:06:29.339 CET [51902] STATEMENT:  
+	    CREATE TABLE IF NOT EXISTS users (
+	      githubId PRIMARY KEY,
+	      login VARCHAR(255),
+	      avatar_url VARCHAR(255),
+	      gravatar_id VARCHAR(255),
+	      email VARCHAR(255)
+	    );
+	  
+2024-01-08 17:08:10.189 CET [31141] LOG:  checkpoint starting: time
+2024-01-08 17:08:16.327 CET [31141] LOG:  checkpoint complete: wrote 61 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.120 s, sync=0.006 s, total=6.139 s; sync files=50, longest=0.001 s, average=0.001 s; distance=246 kB, estimate=529 kB; lsn=0/27DAB58, redo lsn=0/27DAB20
+2024-01-09 13:20:57.269 CET [53846] ERROR:  relation "users" does not exist at character 40
+2024-01-09 13:20:57.269 CET [53846] STATEMENT:  SELECT *
+	                         FROM users
+	                         WHERE id = $1
+2024-01-09 13:23:20.971 CET [53999] ERROR:  column "id" does not exist at character 77
+2024-01-09 13:23:20.971 CET [53999] STATEMENT:  SELECT *
+	                         FROM users
+	                         WHERE id = $1
+2024-01-09 13:24:59.853 CET [54039] ERROR:  column "id" does not exist at character 77
+2024-01-09 13:24:59.853 CET [54039] STATEMENT:  SELECT *
+	                         FROM users
+	                         WHERE id = $1
+2024-01-09 13:25:17.103 CET [54060] ERROR:  column "id" does not exist at character 77
+2024-01-09 13:25:17.103 CET [54060] STATEMENT:  SELECT *
+	                         FROM users
+	                         WHERE id = $1
+2024-01-09 13:25:24.490 CET [31141] LOG:  checkpoint starting: time
+2024-01-09 13:25:32.454 CET [31141] LOG:  checkpoint complete: wrote 79 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.946 s, sync=0.007 s, total=7.965 s; sync files=59, longest=0.002 s, average=0.001 s; distance=416 kB, estimate=517 kB; lsn=0/2842C08, redo lsn=0/2842BD0
+2024-01-09 13:25:39.965 CET [54076] ERROR:  column "id" does not exist at character 77
+2024-01-09 13:25:39.965 CET [54076] STATEMENT:  SELECT *
+	                         FROM users
+	                         WHERE id = $1
+2024-01-09 13:26:30.289 CET [54148] ERROR:  column "id" does not exist at character 77
+2024-01-09 13:26:30.289 CET [54148] STATEMENT:  SELECT *
+	                         FROM users
+	                         WHERE id = $1
+2024-01-09 13:28:38.215 CET [54248] ERROR:  column "id" does not exist at character 77
+2024-01-09 13:28:38.215 CET [54248] STATEMENT:  SELECT *
+	                         FROM users
+	                         WHERE id = $1
+2024-01-09 13:29:49.515 CET [54286] ERROR:  column "githubId" of relation "users" does not exist at character 21
+2024-01-09 13:29:49.515 CET [54286] STATEMENT:  INSERT INTO "users"("githubId","login","avatar_url","gravatar_id","email") VALUES(105716621,'plandrew','https://avatars.githubusercontent.com/u/105716621?v=4','','{"value":"andrew.pl@protonmail.com"}')RETURNING *
+2024-01-09 13:30:24.454 CET [31141] LOG:  checkpoint starting: time
+2024-01-09 13:30:25.580 CET [31141] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.120 s, sync=0.001 s, total=1.127 s; sync files=5, longest=0.001 s, average=0.001 s; distance=67 kB, estimate=472 kB; lsn=0/2853980, redo lsn=0/2853948
+2024-01-09 13:31:10.665 CET [54327] ERROR:  column "githubId" of relation "users" does not exist at character 21
+2024-01-09 13:31:10.665 CET [54327] STATEMENT:  INSERT INTO "users"("githubId","login","avatar_url","gravatar_id","email") VALUES(105716621,'plandrew','https://avatars.githubusercontent.com/u/105716621?v=4','','{"value":"andrew.pl@protonmail.com"}')RETURNING *
+2024-01-09 18:56:54.267 CET [31141] LOG:  checkpoint starting: time
+2024-01-09 18:56:54.482 CET [31141] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.206 s, sync=0.001 s, total=0.218 s; sync files=2, longest=0.001 s, average=0.001 s; distance=7 kB, estimate=426 kB; lsn=0/2855928, redo lsn=0/28558F0
+2024-01-09 18:57:11.651 CET [54636] ERROR:  column "githubId" of relation "users" does not exist at character 21
+2024-01-09 18:57:11.651 CET [54636] STATEMENT:  INSERT INTO "users"("githubId","login","avatar_url","gravatar_id","email") VALUES(105716621,'plandrew','https://avatars.githubusercontent.com/u/105716621?v=4','','{"value":"andrew.pl@protonmail.com"}')RETURNING *
+2024-01-09 19:01:54.321 CET [31141] LOG:  checkpoint starting: time
+2024-01-09 19:01:54.639 CET [31141] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.307 s, sync=0.001 s, total=0.319 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=383 kB; lsn=0/2855BB0, redo lsn=0/2855B78
+2024-01-09 19:26:54.593 CET [31141] LOG:  checkpoint starting: time
+2024-01-09 19:27:02.359 CET [31141] LOG:  checkpoint complete: wrote 77 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.750 s, sync=0.005 s, total=7.768 s; sync files=56, longest=0.001 s, average=0.001 s; distance=427 kB, estimate=427 kB; lsn=0/28C07B8, redo lsn=0/28C0780
+2024-01-09 19:36:54.296 CET [31141] LOG:  checkpoint starting: time
+2024-01-09 19:36:54.616 CET [31141] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.308 s, sync=0.001 s, total=0.321 s; sync files=3, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=384 kB; lsn=0/28C0A40, redo lsn=0/28C0A08
+2024-01-10 20:53:38.235 CET [31141] LOG:  checkpoint starting: time
+2024-01-10 20:53:39.564 CET [31141] LOG:  checkpoint complete: wrote 14 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.321 s, sync=0.001 s, total=1.330 s; sync files=10, longest=0.001 s, average=0.001 s; distance=20 kB, estimate=347 kB; lsn=0/28C5C28, redo lsn=0/28C5BF0
+2024-01-11 19:12:13.835 CET [31141] LOG:  checkpoint starting: time
+2024-01-11 19:12:14.460 CET [31141] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.612 s, sync=0.002 s, total=0.627 s; sync files=7, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=313 kB; lsn=0/28C62F8, redo lsn=0/28C62C0

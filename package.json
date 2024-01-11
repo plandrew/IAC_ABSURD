@@ -1,0 +1,47 @@
+{
+  "name": "iac_absurd",
+  "version": "1.0.0",
+  "description": "Information and Communication Aviation Based System for Unprecedented Recording and Documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plandrew/IAC_ABSURD.git"
+  },
+  "keywords": [
+    "flight",
+    "aviation",
+    "flight recording",
+    "aircraft",
+    "pilot",
+    "flight data",
+    "aviation management",
+    "flight log",
+    "API",
+    "flight tracker"
+  ],
+  "author": ",",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plandrew/IAC_ABSURD/issues"
+  },
+  "homepage": "https://github.com/plandrew/IAC_ABSURD#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jest": "^29.7.0",
+    "js-yaml": "^4.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "passport": "^0.7.0",
+    "passport-github": "^1.1.0",
+    "passport-github2": "^0.1.12",
+    "path": "^0.12.7",
+    "pg": "^8.11.3",
+    "pg-promise": "^11.5.4",
+    "swagger-ui-express": "^5.0.0"
+  }
+}
